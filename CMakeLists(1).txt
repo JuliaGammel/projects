@@ -1,0 +1,13 @@
+
+cmake_minimum_required(VERSION 3.0)
+project(Gammel)
+set(SOURCE_EXE LastVer.cpp)
+add_library(Node STATIC ${SOURCE_LIB})	
+add_library(AnotherQuene STATIC ${SOURCE_LIB})
+add_library(Queue STATIC ${SOURCE_LIB})
+add_library(ThisIsStack STATIC ${SOURCE_LIB})
+add_executable(LastVer ${SOURCE_EXE})
+target_link_libraries(LastVer Node)
+target_link_libraries(LastVer AnotherQuene)
+target_link_libraries(LastVer Queue)
+target_link_libraries(LastVer ThisIsStack)
