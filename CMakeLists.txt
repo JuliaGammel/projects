@@ -8,3 +8,4 @@ src/Queue.h
 src/ThisIsStack.h
 src/AnotherQuene.h
 	src/LastVer.cpp)
+add_executable(LastVer ${SOURCES1})
